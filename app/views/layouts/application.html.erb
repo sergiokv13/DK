@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+        <div id="logo">
+          <a href="/"><img src="/assets/logo.png" width="310px" height="120px"></a>
+        </div>
+        <div id="top-der">
+
+          <div id="menu">
+           <ul id="sidebar">
+                <li><a href="index.html">Inicio</a></li>
+                <li> <a href="#">Hotel +</a> 
+                  <ul> 
+                    <li><a href="empresarial.html">Servicios</a></li> 
+                    <li><a href="exteriores.html">Exteriores</a></li>
+                  </ul> 
+                  </li> 
+                <li><a href="acerca.html">Servicios</a></li>
+                <li><a href="acerca.html">Galeria</a></li>
+                <li><a href="acerca.html">Excursiones</a></li>
+                <li><a href="acerca.html">Contacto</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="clear"> </div>
+        <div id="container">
+          <% flash.each do |name, msg| %>
+            <%= content_tag :div, msg, :id => "flash_#{name}" %>
+          <% end %>
+          <%= content_tag :h1, yield(:title) if show_title? %>
+          <%= yield %>
+        </div>
+
+      <div id="footer">
+      </div>
+
+  </body>
+</html>

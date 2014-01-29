@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	min-width: 1200px;
+	width: 1200px;
+	margin: auto;
+	background-color: black;
+	background-image:url('/assets/bg.jpg');
+}
+
+
+.clear{
+ 	clear: both;
+ 	height: 0;
+ 	overflow: hidden;;
+ }
+
+a:focus {
+	outline:0px;
+}
+
+#container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 920px;
+	background-color: #666666;
+	height: 500px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top:solid 1px #999993;
+}
+
+#footer{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 920px;
+	background-color:#666666;
+	border-radius: 10px;
+	height: 100px;
+}
+
+#logo{
+	border-bottom:solid 1px #2C2C2B;
+	border-right: solid 1px #2C2C2B;
+	margin-left: 140px;
+	margin-top: 50px;
+	width:  310px;
+	height:120px;
+	border-top-left-radius: 10px;
+	background-color:#666666;
+	float:left;
+
+}
+
+#top-der{
+	float:right;
+	margin-top: 50px;
+	width: 608px;
+	border-top-right-radius: 10px;
+	background-color:#666666;
+	height: 120px;
+	border-bottom: solid 1px #2C2C2B;
+	margin-right: 140px;
+	border-left:solid 1px #999993;
+}
+
+
+#menu {
+	padding-top: 30px;
+	font-family:Impact, Charcoal, sans-serif,Georgia,Serif;
+		border-radius: 15px;
+		margin: 6px;
+	    position: absolute;
+	    width: 608px;
+	    box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	}
+	#sidebar{
+		
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    display: block;
+	}
+	#sidebar li a {
+		height: 54px;
+		text-decoration: none;
+		float:left;
+		margin-bottom: 3px;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	    padding: 15px 20px;
+	    font-size: 14px;
+	    font-weight: 120;
+	    color: white;
+	}
+	#sidebar li:hover a {
+	    background: #972a2a;
+	    background-color:rgba(255,0,0,0.5);
+	}
+	#sidebar ul {
+		margin-left: 78px;
+		margin-top: 88px;
+		padding-left: 0px;
+		padding-right: 0px;
+		list-style: none;
+		opacity: 0; /* no son visibles */ 
+		position: absolute;  /* el color de fondo */ 
+		/* animamos su visibildiad */ -moz-transition: opacity .25s ease .1s; -webkit-transition: opacity .25s ease .1s; -o-transition: opacity .25s ease .1s; -ms-transition: opacity .25s ease .1s; transition: opacity .25s ease .1s; 
+		z-index: 20;
+		
+
+	} 
+	#sidebar li:hover > ul { 
+		opacity: 1; 
+	} 
+	#sidebar ul li{
+		width: 0px;
+		overflow: hidden; /* animamos su visibildiad */  /* animamos su visibildiad */ -moz-transition: height .25s ease .1s; -webkit-transition: height .25s ease .1s; -o-transition: height .25s ease .1s; -ms-transition: height .25s ease .1s; transition: height .25s ease .1s; 
+	}
+
+	#sidebar ul li a{
+		font-size: 12px;
+		margin-top: -3px;
+		height: 20px;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		width: 100px;
+	}
+
+
+	#sidebar li:hover > ul li { 
+	/*los mostramos */ 
+		width: 100%;
+		overflow: visible; 
+	} 
+	#sidebar ul li a:hover{ 
+		background: #71171C;
+}
