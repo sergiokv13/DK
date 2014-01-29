@@ -43,7 +43,7 @@ a:focus {
 	height: 500px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-	border-top:solid 1px #999993;
+	border-top:solid 1px #666664;
 	background: rgba(0, 0, 0, 0.7);
 }
 
@@ -59,8 +59,8 @@ a:focus {
 }
 
 #logo{
-	border-bottom:solid 1px #2C2C2B;
-	border-right: solid 1px #2C2C2B;
+	border-bottom:solid 1px #181812;
+	border-right: solid 1px #181812;
 	margin-left: 140px;
 	margin-top: 50px;
 	width:  310px;
@@ -78,9 +78,9 @@ a:focus {
 	border-top-right-radius: 10px;
 	background-color:#262424;
 	height: 120px;
-	border-bottom: solid 1px #2C2C2B;
+	border-bottom: solid 1px #181812;
 	margin-right: 140px;
-	border-left:solid 1px #999993;
+	border-left:solid 1px #494949;
 	background: rgba(0, 0, 0, 0.7);
 }
 
@@ -159,6 +159,22 @@ a:focus {
 		background: #71171C;
 
 }
+ #fila li{
+ 	width: 200px;
+ 	background-color: black;
+ 	margin-left: 30px;
+	display: inline;
+	list-style: none;
+ }
+
+#fila li img{
+	width: 160px;
+	height: 100px;
+	border-radius: 7px;
+	background-color: black;
+	
+}
+
 
 
 
@@ -171,7 +187,7 @@ a:focus {
 	margin-left: auto;
 	//margin-bottom: 1px;
 	background-color: #262424;
-	border-top:solid 1px #999993;
+	border-top:solid 1px #40403B;
 	border-bottom: solid 1px #2C2C2B;
 	background: rgba(0, 0, 0, 0.7);
 }
