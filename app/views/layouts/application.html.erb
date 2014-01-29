@@ -3,7 +3,7 @@
   <head>
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag :defaults %>
+    <script type="text/javascript" src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'> </script>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
@@ -28,7 +28,14 @@
                 <li><a href="acerca.html">Contacto</a></li>
             </ul>
           </div>
-          
+        </div>
+        <div class="clear"></div>
+        <div id="fondoSlide">
+            <div id="slides">
+                      <img src="/assets/pukakilla.jpg" height="auto">
+                      <img src="/assets/pukakilla2.jpg" height="auto">
+                      <img src="/assets/pukakilla3.jpg" height="auto">
+              </div>
         </div>
         <div class="clear"> </div>
         <div id="container">
@@ -44,3 +51,42 @@
 
   </body>
 </html>
+
+
+<script src="/assets/jquery.slides.min.js"></script>
+ <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 910,
+        height: 350,
+        play: {
+          active: true,
+          auto: true,
+          interval: 5000,
+          swap: true
+        }
+      });
+    });
+  </script>
+
+  
+<script type='text/javascript'>
+$(document).ready(function() {
+  
+  //Get the height of our image including the black border
+  var thumbnailImgHeight = $(".thumbnail-mask img").outerHeight();
+  //Set our mask to that height, and set Overflow to Hidden to create the mask
+  $(".thumbnail-mask").height(thumbnailImgHeight);
+  $(".thumbnail-mask").css("overflow","hidden");
+
+  //Get the ammount of negative margin for both hover states
+  var collapsed = -($(".thumbnail-headers").outerHeight());
+  var expanded = -($(".thumbnail-info").outerHeight());
+  //Our border colors
+  var onBorderColor = "#C2C6CC";
+  var offBorderColor = $(".thumbnail").css("border-left-color");
+
+  //Set the default state to collapsed
+  $(".thumbnail-info").css("marginTop", collapsed)
+});
+</script>

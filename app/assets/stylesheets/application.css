@@ -39,11 +39,12 @@ a:focus {
 	margin-left: auto;
 	margin-right: auto;
 	width: 920px;
-	background-color: #666666;
+	background-color: #262424;
 	height: 500px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-top:solid 1px #999993;
+	background: rgba(0, 0, 0, 0.7);
 }
 
 #footer{
@@ -51,9 +52,10 @@ a:focus {
 	margin-left: auto;
 	margin-right: auto;
 	width: 920px;
-	background-color:#666666;
+	background-color:#262424;
 	border-radius: 10px;
 	height: 100px;
+	background: rgba(0, 0, 0, 0.7);
 }
 
 #logo{
@@ -64,9 +66,9 @@ a:focus {
 	width:  310px;
 	height:120px;
 	border-top-left-radius: 10px;
-	background-color:#666666;
+	background-color:#262424;
 	float:left;
-
+	background: rgba(0, 0, 0, 0.7);
 }
 
 #top-der{
@@ -74,11 +76,12 @@ a:focus {
 	margin-top: 50px;
 	width: 608px;
 	border-top-right-radius: 10px;
-	background-color:#666666;
+	background-color:#262424;
 	height: 120px;
 	border-bottom: solid 1px #2C2C2B;
 	margin-right: 140px;
 	border-left:solid 1px #999993;
+	background: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -107,8 +110,7 @@ a:focus {
 		border-top-right-radius: 15px;
 		border-top-left-radius: 15px;
 	    padding: 15px 20px;
-	    font-size: 14px;
-	    font-weight: 120;
+	    font-size: 16px;
 	    color: white;
 	}
 	#sidebar li:hover a {
@@ -116,8 +118,8 @@ a:focus {
 	    background-color:rgba(255,0,0,0.5);
 	}
 	#sidebar ul {
-		margin-left: 78px;
-		margin-top: 88px;
+		margin-left: 77px;
+		margin-top: 88px;z-index: 20;
 		padding-left: 0px;
 		padding-right: 0px;
 		list-style: none;
@@ -125,8 +127,7 @@ a:focus {
 		position: absolute;  /* el color de fondo */ 
 		/* animamos su visibildiad */ -moz-transition: opacity .25s ease .1s; -webkit-transition: opacity .25s ease .1s; -o-transition: opacity .25s ease .1s; -ms-transition: opacity .25s ease .1s; transition: opacity .25s ease .1s; 
 		z-index: 20;
-		
-
+		opacity: 1;
 	} 
 	#sidebar li:hover > ul { 
 		opacity: 1; 
@@ -134,6 +135,7 @@ a:focus {
 	#sidebar ul li{
 		width: 0px;
 		overflow: hidden; /* animamos su visibildiad */  /* animamos su visibildiad */ -moz-transition: height .25s ease .1s; -webkit-transition: height .25s ease .1s; -o-transition: height .25s ease .1s; -ms-transition: height .25s ease .1s; transition: height .25s ease .1s; 
+
 	}
 
 	#sidebar ul li a{
@@ -143,6 +145,8 @@ a:focus {
 		border-top-right-radius: 0px;
 		border-top-left-radius: 0px;
 		width: 100px;
+
+
 	}
 
 
@@ -153,4 +157,132 @@ a:focus {
 	} 
 	#sidebar ul li a:hover{ 
 		background: #71171C;
+
+}
+
+
+
+
+
+#fondoSlide{
+	width: 920px;
+	height: 405px;
+	margin-right: auto;
+	margin-left: auto;
+	//margin-bottom: 1px;
+	background-color: #262424;
+	border-top:solid 1px #999993;
+	border-bottom: solid 1px #2C2C2B;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+#slides {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 37px;
+	width: 870px;
+}
+
+#slides .slidesjs-navigation {
+	margin-top:5px;
+
+}
+
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+	background-image: url(/assets/btns-next-prev.png);
+	background-repeat: no-repeat;
+	display:block;
+	width:12px;
+	height:18px;
+	overflow: hidden;
+	text-indent: -9999px;
+	float: left;
+	margin-right:5px;
+}
+
+a.slidesjs-next {
+	margin-right:10px;
+	background-position: -12px 0;
+}
+
+a:hover.slidesjs-next {
+	background-position: -12px -18px;
+}
+
+a.slidesjs-previous {
+	background-position: 0 0;
+}
+
+a:hover.slidesjs-previous {
+	background-position: 0 -18px;
+}
+
+a.slidesjs-play {
+	width:15px;
+	background-position: -25px 0;
+}
+
+a:hover.slidesjs-play {
+	background-position: -25px -18px;
+}
+
+a.slidesjs-stop {
+	width:18px;
+	background-position: -41px 0;
+}
+
+a:hover.slidesjs-stop {
+	background-position: -41px -18px;
+}
+
+.slidesjs-pagination {
+	margin: 7px 0 0;
+	float: right;
+	list-style: none;
+}
+
+.slidesjs-pagination li {
+	float: left;
+	margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url(/assets/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+	background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+	background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+	color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+	color: #9e2020
+}
+
+.navbar {
+	overflow: hidden;	
+}
+
+#slides {
+	display: none;
 }
