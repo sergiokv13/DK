@@ -37,6 +37,19 @@
                       <img src="/assets/pukakilla3.jpg" height="auto">
               </div>
         </div>
+
+        <% if current_uri = request.env['PATH_INFO'].to_s == "/" %>
+          <a class="highclass"href="/"></a>
+          <div id="imagenes">
+              <div class="titulos"><a href="#"><img src="/assets/mensaje.png"></a></div>
+              <div class="titulos"><a href="#"><img src="/assets/comedor.jpg"></a>
+              Galeria de fotos</div>
+              <div class="titulos"><a href="#"><img src="/assets/cristo.jpg"></a>
+              Turismo</div>
+              <div class="titulos"><a href="#"><img src="/assets/reserva.jpg"></a>
+             Haz tu reserva</div>
+          </div>
+        <% end %>
         <div class="clear"> </div>
         <div id="container">
           <% flash.each do |name, msg| %>
@@ -47,6 +60,17 @@
         </div>
 
       <div id="footer">
+        <div id="info">
+          <h1>Informacion de Contacto</h1>
+          <strong>Direccion:</strong> Segunda Circunvalación entre final Pando y Luis Calvo.<br/><br/>
+          <strong>Telefono:</strong> (+591) 70 71 76 02<br/><br/>
+          <strong>Email:</strong> info@pukakillahotels.com<br/><br/>
+        </div>
+          
+        <div id="mapa">
+          <h1>Mapa de la ubicacion</h1>
+          <iframe width="580" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.bo/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=Puka+Killa,+Circunvalacion+2+entre+final+Pando+y+Luis+Calvo,+Cochabamba,+Bolivia&amp;hl=es&amp;geocode=CXDPTNABXnc4FcAn9_4dVZ4O_CnjSf59JXTjkzFgyim1DkHRlQ&amp;aq=&amp;sll=-17.359158,-66.148102&amp;sspn=0.012636,0.019741&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=-17.359158,-66.148081&amp;spn=0.013107,0.024848&amp;z=15&amp;output=embed"></iframe><br />
+        </div>
       </div>
 
   </body>
