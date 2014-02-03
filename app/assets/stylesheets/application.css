@@ -49,10 +49,10 @@ a:focus {
 }
 
 #footer{
-	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
+	margin-top: 20px;
 	width: 920px;
 	background-color:#262424;
 	border-radius: 10px;
@@ -70,7 +70,7 @@ a:focus {
 
 #logo{
 	border-bottom:solid 1px #191919;
-	border-right: solid 1px #181812;
+	border-right: solid 1px black;
 	width:  309px;
 	height:120px;
 	border-top-left-radius: 10px;
@@ -79,14 +79,18 @@ a:focus {
 	background: rgba(0, 0, 0, 0.7);
 }
 
+#logo img{
+	margin-top: 10px;
+}
+
 #top-der{
 	float:right;
 	width: 609px;
 	border-top-right-radius: 10px;
 	background-color:#262424;
 	height: 120px;
-	border-bottom: solid 1px #181812;
-	border-left:solid 1px #494949;
+	border-bottom: solid 1px #191919;
+	border-left:solid 1px #211C1C;
 	background: rgba(0, 0, 0, 0.7);
 }
 
@@ -172,7 +176,7 @@ a:focus {
 }
 #imagenes{
 	width: 200px;
-	height: 600px;
+	height: 500px;
 } 
 
 #imagenes img{
@@ -201,7 +205,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 #texto{
 	width: 400px;
 	float: right;
-	margin-top: -550px;
+	margin-top: -450px;
 	margin-right: 270px;
 	font-size: 17px;
 	color: white;
@@ -223,16 +227,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 #info{
-	color: white;
 	width: 250px;
 	float: left;
-	margin-left: 20px;
+	margin-left: 10px;
+	color: white;
 }
 
 #mapa{
 	color: white;
-	float: right;
-	margin-right: 10px;
+	float: left;
+	margin-left: 50px;
 }
 
 
@@ -243,7 +247,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #262424;
-	border-top:solid 1px #40403B;
+	border-top:solid 1px black;
 	border-bottom: solid 1px #2C2C2B;
 	background: rgba(0, 0, 0, 0.7);
 }
