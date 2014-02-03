@@ -1,1 +1,24 @@
-Este es el container
+<% if current_uri = request.env['PATH_INFO'].to_s == "/" %>
+    <a class="highclass"href="/"></a>
+    <div id="imagenes">
+        <div class="titulos"><a href="#"><img src="/assets/comedor.jpg"></a>
+        Galeria de fotos</div>
+        <div class="titulos"><a href="#"><img src="/assets/cristo.jpg"></a>
+        Turismo</div>
+        <div class="titulos"><a href="#"><img src="/assets/reserva.jpg"></a>
+        Reserva!</div>
+    </div>
+    
+
+    <div id="texto">
+      <p>En el corazón de Bolivia, al pié de la cordillera de los Andes y a escasos metros de la entrada al <a href="http://es.wikipedia.org/wiki/Parque_nacional_Tunari" target="_blank">Parque Nacional Tunari</a> se encuentra Puka Killa que en quechua significa “Luna Roja”. </p>
+
+      <p>Es una agradable y amplia casa familiar que cuenta con 8 habitaciones disponibles para los huéspedes, todas ellas con vistas panorámicas de la ciudad de Cochabamba y de las montañas que la rodean. </p>
+
+      <p>Se encuentra Puka Killa que en quechua significa “Luna Roja”. Es una agradable y amplia casa familiar que cuenta con 8 habitaciones disponibles para los huéspedes, todas ellas con vistas panorámicas de la ciudad de Cochabamba y de las montañas que la rodean. </p>
+    </div>
+
+    <div id="imgContainer">
+      <img src="/assets/tripa.jpg">
+    </div>
+<% end %>
